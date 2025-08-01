@@ -1,17 +1,13 @@
+image: python:3.10
+
 stages:
   - test
 
-variables:
-  DOCKER_DRIVER: overlay2
-
-# Этап тестирования
 test:
   stage: test
   script:
-    - docker build -t test-project .
-    - docker run --name test-container test-project
-    - docker exec test-container pytest --alluredir=/app/allure-results
-  when: manual
-  allow_failure: false
+    - pip install -r requirements.txt
+    - pytest --alluredir=allure-results
   tags:
-    - docker
+    - local
+  when: manual
