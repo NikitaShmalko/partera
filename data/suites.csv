@@ -1,2 +1,2 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Fri Aug 01 14:52:12 UTC 2025","Fri Aug 01 14:52:13 UTC 2025","1403","api","test_api_login","","","","Тест успешного логина","Проверка успешного логина через API"
+"passed","Fri Aug 01 14:52:54 UTC 2025","Fri Aug 01 14:52:56 UTC 2025","1241","api","test_api_login","","","","Тест успешного логина","Проверка успешного логина через API"
